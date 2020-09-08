@@ -44,8 +44,8 @@ const useStyles = makeStyles((theme) => ({
 
 const schema = yup.object().shape({
   from: yup.string().required(),
-  to: yup.string().required(),
-  message: yup.number().positive().integer().required()
+  to: yup.number().positive().integer().required(),
+  message: yup.string().required(),
 });
 
 export default function Settings() {
